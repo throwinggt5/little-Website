@@ -1,0 +1,46 @@
+
+
+/* Heading 2 styles */
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Heading 3 styles */
+h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* List items styling */
+ul li {
+    margin-bottom: 8px;
+}
+
+/* Strong text styling */
+strong {
+    font-weight: bold;
+}
+
+/* Ordered list for step-by-step process */
+ol {
+    padding-left: 20px;
+}
+
+/* List items in ordered list */
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}

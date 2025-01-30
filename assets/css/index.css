@@ -1,0 +1,76 @@
+
+  /* About cards */
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .about-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 82%;  /* Increased width for wider cards */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card icons and titles */
+  .card-icon {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Card text */
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Bottom section with figure */
+  .about-bottom {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .about-bottom-banner {
+    display: inline-block;
+    max-width: 100%;
+  }
+  
+  .about-banner {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .about-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  

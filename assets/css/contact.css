@@ -215,6 +215,7 @@
     max-width: 64rem;
     margin: 0 auto 0 0;
     padding: 2.5rem 1.5rem;
+
   }
   #contact-1750 .cs-picture-group {
     width: 90%;
@@ -239,6 +240,7 @@
   #contact-1750 .cs-label:nth-of-type(3) {
     grid-column: span 6;
   }
+
 }
 /* Largest Desktop - 1920px */
 @media only screen and (min-width: 120rem) {
@@ -251,4 +253,3 @@
     transform: translateX(-22rem);
   }
 }
-                                
