@@ -8,12 +8,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate the fields (Basic validation)
     if (empty($name) || empty($email) || empty($phone) || empty($message)) {
-        echo "All fields are required.";
+        echo "<script>
+                alert('All fields are required.');
+                window.location.href = '../../contact-us.html';
+              </script>";
         exit;
     }
 
     // Email settings
-    $to = "ithinksoiamexist@gmail.com"; 
+    $to = "Ouardi.mouncif@the-golden-services.com"; 
     $subject = "New Contact Form Submission from $name";
     $body = "
         <strong>Name:</strong> $name <br>
@@ -29,11 +32,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
-        echo "Thank you for contacting us. We will get back to you soon!";
+        echo "<script>
+                alert('Thank you for contacting us. We will get back to you soon!');
+                window.location.href = '../../contact-us.html';
+              </script>";
     } else {
-        echo "There was an error sending your message. Please try again.";
+        echo "<script>
+                alert('There was an error sending your message. Please try again.');
+                window.location.href = '../../contact-us.html';
+              </script>";
     }
 } else {
-    echo "Invalid request.";
+    echo "<script>
+            alert('Invalid request.');
+            window.location.href = '../../contact-us.html';
+          </script>";
 }
 ?>
