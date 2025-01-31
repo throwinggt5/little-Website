@@ -7,10 +7,17 @@
     padding: 0;
     margin: 0;
   }
+  .overlay{
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(16px);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+
+  }
   
   .about-card {
-    background: white;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 82%;  /* Increased width for wider cards */
@@ -26,21 +33,38 @@
   /* Card icons and titles */
   .card-icon {
     font-size: 3rem;
-    color: #007bff;
     margin-bottom: 15px;
   }
   
   .card-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: white !important;
     margin-bottom: 15px;
   }
   
+  .One{
+    background-image: url('../../images/A1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+  
+  
+  }
+  .Two{
+    background-image: url('../../images/A2.jpg'); 
+    background-size: cover; 
+    background-position: center;
+  
+  }
+  .Three{
+    background-image: url('../../images/B1.jpg'); 
+    background-size: cover; 
+    background-position: center;
+  }
   /* Card text */
   .card-text {
     font-size: 1rem;
-    color: #666;
+    color: white !important;
     line-height: 1.5;
   }
   
@@ -73,4 +97,163 @@
       margin-bottom: 20px;
     }
   }
-  
+  /*
+  .slideshow-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slideshow-container {
+    border-radius: 10px;
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+}
+.overlay{
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
+  height: 100%;
+  width: 100%;
+
+
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+    
+}
+
+.card {
+    padding: 20px;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: white !important;
+    padding-bottom: 3em;
+}
+
+.card h3 {
+  margin-top:1em;
+    color: white !important;
+}
+.A{
+  background-image: url('../../images/A1.jpg'); 
+  background-size: cover; 
+  background-position: center;
+
+
+}
+.B{
+  background-image: url('../../images/A2.jpg'); 
+  background-size: cover; 
+  background-position: center;
+
+}
+.C{
+  background-image: url('../../images/B1.jpg'); 
+  background-size: cover; 
+  background-position: center;
+
+}
+
+@media (max-width: 768px) {
+  .slideshow-container {
+      flex: 1 1 calc(50% - 20px); 
+      max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .slideshow-container {
+      flex: 1 1 100%; 
+      max-width: 100%;
+  }
+
+  .card {
+      padding: 15px; 
+  }
+
+  .card h3 {
+      font-size: 1.2rem; 
+  }
+
+  .card p {
+      font-size: 0.9rem; 
+  }
+}
+*/
+
+
+/* Base styles for icons */
+section div .icon {
+  font-size: 5em; /* Adjust size as needed */
+  margin: 0 2em; /* Add some spacing */
+  vertical-align: middle; /* Align with text */
+  display: inline-block;
+  text-align: center;
+  color:rgb(199, 158, 78)
+}
+
+/* Float icons to the left */
+div .float-left {
+  float: left;
+  margin-right: 20px; /* Add spacing between icon and text */
+}
+
+/* Float icons to the right */
+div .float-right {
+  float: right;
+  margin-left: 20px; /* Add spacing between icon and text */
+}
+
+/* Clear floats to prevent layout issues */
+h3, p {
+  overflow: auto; /* Clear floats */
+}
+
+/* Optional: Add padding to paragraphs for better spacing */
+p {
+  padding: 10px 0;
+}
+
+/* Make the layout more responsive on small screens */
+@media (max-width: 768px) {
+  section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+    margin-bottom: 20px;
+  }
+
+  section div .icon {
+    font-size: 4em; /* Adjust icon size for smaller screens */
+    margin: 10px 0; /* Adjust spacing for smaller screens */
+  }
+
+  div .float-left, div .float-right {
+    float: none; /* Remove floating for small screens */
+    margin: 10px 0; /* Adjust margin for mobile-friendly layout */
+  }
+
+  h3 {
+    text-align: center; /* Center text on small screens */
+  }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  section div .icon {
+    font-size: 3em; /* Further reduce icon size on extra small screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust paragraph text size for readability */
+  }
+}
